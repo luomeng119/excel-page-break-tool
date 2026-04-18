@@ -12,7 +12,7 @@ from config import OUTPUT_DIR
 
 def test_file_detection():
     """测试文件检测"""
-    test_file = "/Users/lm/Desktop/tong-py/卷内目录_原始备份.xlsx"
+    test_file = "test_data/卷内目录_原始备份.xlsx"
 
     print("=" * 60)
     print("【测试1】文件存在性检测")
@@ -29,7 +29,7 @@ def test_file_detection():
 
 def test_workbook_load():
     """测试工作簿加载"""
-    test_file = "/Users/lm/Desktop/tong-py/卷内目录_原始备份.xlsx"
+    test_file = "test_data/卷内目录_原始备份.xlsx"
 
     print("\n" + "=" * 60)
     print("【测试2】工作簿加载")
@@ -51,7 +51,7 @@ def test_workbook_load():
 
 def test_serial_detection():
     """测试序号检测"""
-    test_file = "/Users/lm/Desktop/tong-py/卷内目录_原始备份.xlsx"
+    test_file = "test_data/卷内目录_原始备份.xlsx"
 
     print("\n" + "=" * 60)
     print("【测试3】序号行检测")
@@ -84,7 +84,7 @@ def test_serial_detection():
 
 def test_page_break_logic():
     """测试分页符逻辑：验证只有 prev_seq != 1 时才插入分页符"""
-    test_file = "/Users/lm/Desktop/tong-py/卷内目录_原始备份.xlsx"
+    test_file = "test_data/卷内目录_原始备份.xlsx"
 
     print("\n" + "=" * 60)
     print("【测试4】分页符逻辑验证")
@@ -163,7 +163,7 @@ def test_backup():
     """测试原始文件备份功能"""
     import shutil
 
-    test_file = "/Users/lm/Desktop/tong-py/卷内目录_原始备份.xlsx"
+    test_file = "test_data/卷内目录_原始备份.xlsx"
     test_copy = "/tmp/test_backup_source.xlsx"
     shutil.copy2(test_file, test_copy)
 
@@ -229,7 +229,7 @@ def test_full_process():
     """完整处理流程测试"""
     import shutil
 
-    test_file = "/Users/lm/Desktop/tong-py/卷内目录_原始备份.xlsx"
+    test_file = "test_data/卷内目录_原始备份.xlsx"
     test_copy = "/tmp/test_full_process.xlsx"
     shutil.copy2(test_file, test_copy)
 
@@ -292,7 +292,7 @@ def main():
     print("\n" + "=" * 60)
     print("Excel分页符工具 V1 - 完整流程测试")
     print("=" * 60)
-    print(f"测试文件: /Users/lm/Desktop/tong-py/卷内目录_原始备份.xlsx")
+    print(f"测试文件: test_data/卷内目录_原始备份.xlsx")
     print(f"输出目录: {OUTPUT_DIR}")
     print("")
 
