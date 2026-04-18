@@ -1,23 +1,26 @@
-# Dependencies
-node_modules/
+# Python
 __pycache__/
-*.pyc
-.venv/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+*.spec
 
 # IDE
-.idea/
 .vscode/
-*.swp
+.idea/
 
 # OS
 .DS_Store
 Thumbs.db
 
-# Build
-dist/
-build/
-*.tmp
+# 测试输出
+test/*.xlsx
+!test/.gitkeep
 
-# Sample data
-*.xlsx
-!docs/sample-structure.png
+# 虚拟环境
+venv/
+.venv/
+
+# PyInstaller
+*.manifest
